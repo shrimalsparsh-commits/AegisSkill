@@ -1,0 +1,65 @@
+# ==============================================================================
+# AegisSkill .gitignore
+# ==============================================================================
+
+# LLM Model Weights & Large Binaries (Never commit 1GB+ model weights to Git)
+*.gguf
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+models/
+.models/
+**/models/
+**/.models/
+.aegisskill/
+
+# PyInstaller / Build Artifacts
+build/
+dist/
+*.spec.bak
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Packaging & Distribution
+*.egg
+*.egg-info/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & Editor Configurations
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
